@@ -7,7 +7,14 @@ export const PlotData: IPlotData[] = [
     caption:
       "TicketBell은 공연예매를 보다 편하게 예약하기위한 서비스입니다 , 공연 등록자와 예매자를 권한에 맞게 회원을 등록해 공연 등록 및 예매가 가능한 서비스입니다. 프론트엔드 2명 , 백엔드 2명과 협업하였습니다",
     plot: ["이벤트 등록 폼 구현", "이벤트 등록내역 및 예약내역 구현 ", "이벤트 상세페이지 구현"],
-    stack: ["Typescript", "Next", "Recoil", "Dayjs", "React-form-hook"],
+    stack: [
+      { name: "Typescript", caption: "JavaScript는 웹 페이지에 동적 기능을 추가하기 위한 언어입니다." },
+      { name: "Next", caption: "React는 UI를 구축하기 위한 JavaScript 라이브러리입니다." },
+      { name: "Recoil", caption: "React는 UI를 구축하기 위한 Typescript 라이브러리입니다." },
+      { name: "Dayjs", caption: "React는 UI를 구축하기 위한 JavaScript 라이브러리입니다." },
+      { name: "React-form-hook", caption: "React는 UI를 구축하기 위한 Typescript 라이브러리입니다." },
+    ],
+
     image: "",
   },
   {

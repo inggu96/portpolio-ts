@@ -1,8 +1,12 @@
+import { useState } from "react";
+
 interface Props {
   data: IPlotData;
 }
 export const TextCard = ({ data }: Props): JSX.Element => {
   const { title, type, period, caption, plot, stack, image } = data;
+
+  const [selectedStackItem, setSelectedStackItem] = useState<string | null>(stack[0]?.caption);
 
   return (
     <div className="w-full p-6 flex flex-col lg:flex-row">
@@ -17,20 +21,29 @@ export const TextCard = ({ data }: Props): JSX.Element => {
         {plot.map((item, key) => {
           return (
             <p key={key} className="mt-3 text-2xl text-black md:text-lg">
-              {item}
+              ✔️ {item}
             </p>
           );
         })}
+
         <div className="mt-4 flex">
           {stack.map((item, key) => {
             return (
-              <p key={key} className="text-sm text-gray-500 dark:text-gray-400 mr-4">
-                {item}
-              </p>
+              <div
+                key={key}
+                onClick={() => setSelectedStackItem(item.caption)}
+                className={`text-sm py-2 px-6 bg-white border shadow cursor-pointer duration-200 ${
+                  selectedStackItem === item.caption ? "bg-black text-white" : "bg-white text-black"
+                } hover:bg-black hover:text-white`}
+              >
+                <p className="">{item.name}</p>
+              </div>
             );
           })}
         </div>
-        <div className="mt-4 flex">{caption}</div>
+        <div className="py-5 px-5 flex border shadow rounded-lg duration-200 ">
+          {selectedStackItem && <div>{selectedStackItem}</div>}
+        </div>
       </div>
     </div>
   );

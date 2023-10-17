@@ -13,6 +13,6 @@ interface IPlotData {
   period: string;
   caption: string;
   plot: string[];
-  stack: string[];
+  stack: string[{ name: string; caption: string }];
   image: string;
 }
