@@ -37,13 +37,19 @@ export const HomeList = () => {
     // 기본width 제한 <div className="container my-6 mx-auto px-6 md:px-12 xl:px-32">
     //
     <div className=" text-black gradient mt-12">
+      <div className="container flex justify-between mx-auto items-center px-12">
+        <div>1</div>
+        <div className="text-3xl font-bold">이인국</div>
+      </div>
       <Progressbar />
       <div className="container px-12 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h1 className="my-4 text-5xl font-bold leading-tight">
+          <h1 className="my-4 text-5xl font-bold leading-tight wrap-now">
             소통하며 개발하는 것을 즐기는 프론트엔드 개발자입니다
           </h1>
-          <p className="leading-normal text-2xl mb-8"></p>
+          <p className="leading-normal text-2xl mb-8">
+            Sub-hero message, not too long and not too short. Make it just right!
+          </p>
         </div>
       </div>
       {/* Project */}

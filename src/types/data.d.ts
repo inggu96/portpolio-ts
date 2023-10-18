@@ -14,5 +14,6 @@ interface IPlotData {
   caption: string;
   plot: string[];
   stack: string[{ name: string; caption: string }];
-  image: string;
+  gitLink: string;
+  gitImage: string;
 }

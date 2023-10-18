@@ -4,7 +4,7 @@ interface Props {
   data: IPlotData;
 }
 export const TextCard = ({ data }: Props): JSX.Element => {
-  const { title, type, period, caption, plot, stack, image } = data;
+  const { title, type, gitLink, gitImage, period, caption, plot, stack, image } = data;
 
   const [selectedStackItem, setSelectedStackItem] = useState<string | null>(stack[0]?.caption);
 
@@ -13,6 +13,11 @@ export const TextCard = ({ data }: Props): JSX.Element => {
       <div className="w-1/4">
         <h3 className="text-3xl text-black font-bold leading-none mb-3">{title}</h3>
         <p className="text-gray-600 mb-8">{period}</p>
+        <button>
+          <a href={gitLink}>
+            <img className="shadow rounded-lg" src={gitImage} alt="icon" width="60" height="60" />
+          </a>
+        </button>
       </div>
       <div className="w-3/4 mx-2 ">
         <div>
