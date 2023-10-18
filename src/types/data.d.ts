@@ -1,9 +1,9 @@
-interface IProjectData {
+interface IActData {
   id: number;
+  type: string;
   title: string;
-  plot: string;
-  stack: string;
-  image: string;
+  period: string;
+  caption: string;
 }
 
 interface IPlotData {
