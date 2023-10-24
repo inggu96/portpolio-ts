@@ -16,4 +16,6 @@ interface IPlotData {
   stack: string[{ name: string; caption: string }];
   gitLink: string;
   gitImage: string;
+  pubLink: string;
+  pubImage: string;
 }

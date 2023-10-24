@@ -6,6 +6,8 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
     stack: [],
     gitLink: "",
     gitImage: "",
+    pubLink: "",
+    pubImage: "",
   };
   const { title, type, period, caption, image, ...optionalFields } = { ...defaultData, ...data };
   const [selectedStackItem, setSelectedStackItem] = useState<string | null>(optionalFields.stack[0]?.caption);
@@ -17,13 +19,22 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
           {title}
         </h3>
         <p className="text-gray-600 mb-8 sm:w-full sm:flex-nowrap">{period}</p>
-        {optionalFields.gitLink && optionalFields.gitImage && (
-          <button>
-            <a href={optionalFields.gitLink}>
-              <img className="shadow rounded-lg" src={optionalFields.gitImage} alt="icon" width="60" height="60" />
-            </a>
-          </button>
-        )}
+        <div className="flex gap-4">
+          {optionalFields.gitLink && optionalFields.gitImage && (
+            <button>
+              <a href={optionalFields.gitLink}>
+                <img className="shadow rounded-lg" src={optionalFields.gitImage} alt="icon" width="60" height="60" />
+              </a>
+            </button>
+          )}
+          {optionalFields.pubLink && optionalFields.pubImage && (
+            <button>
+              <a href={optionalFields.pubLink}>
+                <img className="shadow rounded-lg" src={optionalFields.pubImage} alt="icon" width="60" height="60" />
+              </a>
+            </button>
+          )}
+        </div>
       </div>
       <div className="w-3/4 mx-2 ">
         <div>
@@ -34,29 +45,32 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
             ✔️ {item}
           </p>
         ))}
-        {optionalFields.stack?.length > 0 && (
-          <>
-            <h2 className="my-1 py-2 text-2xl font-bold">사용한 기술들</h2>
-            <div className="mt-4 flex w-full">
-              {optionalFields.stack.map((item, key) => {
-                return (
-                  <div
-                    key={key}
-                    onClick={() => setSelectedStackItem(item.caption)}
-                    className={`text-sm py-2 px-6 bg-white border shadow cursor-pointer duration-200 ${
-                      selectedStackItem === item.caption ? "bg-black text-white" : "bg-white text-black"
-                    } hover:bg-black hover:text-white`}
-                  >
-                    <p className="">{item.name}</p>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="py-5 px-5 flex border shadow rounded-lg duration-200 ">
-              {selectedStackItem && <div>{selectedStackItem}</div>}
-            </div>
-          </>
-        )}
+        <div className="mt-4 flex flex-col w-full sm:w-auto ">
+          {optionalFields.stack?.length > 0 && (
+            <>
+              <h2 className="my-1 py-2 text-2xl font-bold">사용한 기술들</h2>
+              <div className="mt-4 flex w-full">
+                {optionalFields.stack.map((item, key) => {
+                  return (
+                    <div
+                      key={key}
+                      onClick={() => setSelectedStackItem(item.caption)}
+                      className={`text-sm py-2 px-6 bg-white border shadow cursor-pointer duration-200 ${
+                        selectedStackItem === item.caption ? "bg-black text-white" : "bg-white text-black"
+                      } hover:bg-black hover:text-white`}
+                    >
+                      <p className="">{item.name}</p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="relative bg-white shadow-lg p-6 border border-indigo-300 rounded-lg md:w-full transition-all duration-500 ease-in-out ">
+                {selectedStackItem && <div>{selectedStackItem}</div>}
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
