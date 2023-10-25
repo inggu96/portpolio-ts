@@ -1,7 +1,6 @@
 export const PlotData: IPlotData[] = [
   {
     id: 1,
-    type: "팀프로젝트",
     title: "티켓벨",
     period: "제작기간 :23.09.20. ~ 진행중",
     caption:
@@ -35,7 +34,6 @@ export const PlotData: IPlotData[] = [
   },
   {
     id: 2,
-    type: "팀프로젝트",
     title: "큐링이노스",
     period: "제작기간 :23.08.29. ~ 09.12",
     caption:
@@ -70,7 +68,6 @@ export const PlotData: IPlotData[] = [
 
   {
     id: 3,
-    type: "개인프로젝트",
     title: "위플리",
     period: "제작기간 : 2023.05.20 ~ 07.31",
     caption:
@@ -106,7 +103,6 @@ export const PlotData: IPlotData[] = [
 
   {
     id: 4,
-    type: "팀프로젝트",
     title: "무비셀렉터",
     period: "제작기간 : 23.03.13 ~ 04.14",
     caption:
@@ -137,7 +133,6 @@ export const PlotData: IPlotData[] = [
 export const ActData: IActData[] = [
   {
     id: 1,
-    type: "Education",
     title: "CS면접 스터디",
     period: "진행기간 : 23년 08월 ~ 10월",
     caption:
@@ -145,15 +140,13 @@ export const ActData: IActData[] = [
   },
   {
     id: 2,
-    type: "Experience",
     title: "일가자인력 부산점",
     period: "업무기간 : 20년 09월 ~ 22년 09월",
     caption:
-      "군 전역 후 코로나 시기에 항공관련으로 취업이 힘든 시기를 겪는 중 우연히 보게된 모바일 인력사무실 창업광고를 보고 군경력을 살려 창업을 하게되었습니다. 인력사무소장으로써 일일건설업종 근로자와 구인자를 알선하는 업무 및 모바일 어플을 사용해 근로자의 근퇴관리와 구인자의 임금납부까지 맡아서 2년간 자영업을 하였습니다.",
+      "군경력을 살려 모바일 인력사무실 창업을 하게되었습니다. 인력사무소장으로써 인력사무소장으로써 일일건설업종 근로자와 구인자를 알선하는 업무 및 모바일 어플을 사용해 근로자의 근퇴관리와 구인자의 임금납부까지 맡아서 2년간 자영업을 하였습니다.",
   },
   {
     id: 3,
-    type: "Experience",
     title: "제10 전투비행단",
     period: "업무기간 : 17년 03월 ~ 20년 03월",
     caption:

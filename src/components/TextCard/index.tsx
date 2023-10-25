@@ -9,7 +9,7 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
     pubLink: "",
     pubImage: "",
   };
-  const { title, type, period, caption, image, ...optionalFields } = { ...defaultData, ...data };
+  const { title, period, caption, ...optionalFields } = { ...defaultData, ...data };
   const [selectedStackItem, setSelectedStackItem] = useState<string | null>(optionalFields.stack[0]?.caption);
 
   return (
@@ -50,7 +50,7 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
             <>
               <h2 className="my-1 py-2 text-2xl font-bold">사용한 기술들</h2>
               <div className="mt-4 flex w-full">
-                {optionalFields.stack.map((item, key) => {
+                {optionalFields.stack.map((item: IStackItem, key: number) => {
                   return (
                     <div
                       key={key}

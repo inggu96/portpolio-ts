@@ -31,7 +31,9 @@ export const HomeList = () => {
           </h1>
 
           <p className="leading-normal lg:text-xl text-md mb-1 ">2023년 01월 ~ 04월 코드스테이츠 프론트엔드과정 수료</p>
-          <p className="leading-normal lg:text-xl text-md mb-8">2019년 06월 ~ 10월 SBS컴퓨터아트학원 웹퍼블리싱 이수</p>
+          <p className="leading-normal lg:text-xl text-md mb-8">
+            2019년 06월 ~ 10월 SBS컴퓨터아트학원 웹퍼블리싱과정 이수
+          </p>
         </div>
       </div>
       {/* Project */}

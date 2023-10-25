@@ -1,19 +1,22 @@
 interface IActData {
   id: number;
-  type: string;
   title: string;
   period: string;
   caption: string;
 }
 
+interface IStackItem {
+  name: string;
+  caption: string;
+}
+
 interface IPlotData {
   id: number;
-  type: string;
   title: string;
   period: string;
   caption: string;
   plot: string[];
-  stack: string[{ name: string; caption: string }];
+  stack: IStackItem[];
   gitLink: string;
   gitImage: string;
   pubLink: string;
