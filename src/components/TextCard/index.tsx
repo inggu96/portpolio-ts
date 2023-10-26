@@ -56,7 +56,7 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
                       key={key}
                       onClick={() => setSelectedStackItem(item.caption)}
                       className={`text-sm py-2 px-6 bg-white border shadow cursor-pointer duration-200 ${
-                        selectedStackItem === item.caption ? "bg-black text-white" : "bg-white text-black"
+                        selectedStackItem === item.caption ? "bg-black dark:bg-black text-white" : "bg-white text-black"
                       } hover:bg-black hover:text-white`}
                     >
                       <p className="">{item.name}</p>
