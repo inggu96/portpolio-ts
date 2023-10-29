@@ -36,7 +36,7 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
           )}
         </div>
       </div>
-      <div className="w-3/4 mx-2 ">
+      <div className="w-full lg:w-3/4 mx-2 ">
         <div>
           <p className="">{caption}</p>
         </div>
@@ -45,27 +45,37 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
             ✔️ {item}
           </p>
         ))}
-        <div className="mt-4 flex flex-col w-full sm:w-auto ">
+        <div className="mt-4 max-w-2xl mx-auto  flex-row">
           {optionalFields.stack?.length > 0 && (
             <>
               <h2 className="my-1 py-2 text-2xl font-bold">사용한 기술들</h2>
-              <div className="mt-4 flex w-full">
+              <div className="flex flex-row">
                 {optionalFields.stack.map((item: IStackItem, key: number) => {
                   return (
-                    <div
+                    <ul
                       key={key}
                       onClick={() => setSelectedStackItem(item.caption)}
-                      className={`text-sm py-2 px-6 bg-white border shadow cursor-pointer duration-200 ${
-                        selectedStackItem === item.caption ? "bg-black dark:bg-black text-white" : "bg-white text-black"
-                      } hover:bg-black hover:text-white`}
+                      className={`flex flex-wrap -mb-px  border-b border-gray-200 dark:border-gray-700 mb-4`}
                     >
-                      <p className="">{item.name}</p>
-                    </div>
+                      <li className="mr-2">
+                        <button
+                          className={`inline-block py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 
+            ${
+              item.caption === selectedStackItem
+                ? "text-indigo-500 border-indigo-500"
+                : "text-gray-500 hover:text-gray-600 hover:border-gray-300"
+            }
+            dark:text-gray-400 dark:hover:text-gray-300 rounded-t-lg`}
+                        >
+                          {item.name}
+                        </button>
+                      </li>
+                    </ul>
                   );
                 })}
               </div>
 
-              <div className="relative bg-white shadow-lg p-6 border border-indigo-300 rounded-lg md:w-full transition-all duration-500 ease-in-out ">
+              <div className="relativebg-gray-50 p-4 rounded-lg dark:bg-gray-800 shadow ">
                 {selectedStackItem && <div>{selectedStackItem}</div>}
               </div>
             </>
