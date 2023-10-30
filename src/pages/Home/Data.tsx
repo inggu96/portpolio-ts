@@ -22,8 +22,8 @@ export const PlotData: IPlotData[] = [
         caption: "리덕스의 보일러 플레이트를 보완하기위해 높은 점유율로 사용되고있는 Recoil을 사용했습니다. ",
       },
       {
-        name: "React-form-hook",
-        caption: "이벤트등록을 위해 해당 라이브러리를 사용했고, form에 입력된 값들을 종합해 서버로 보낼 수 있었습니다.",
+        name: "tailwind",
+        caption: "유지관리와 코드의 통일성을 위해 tailwind를 사용하여 유지 관리과 통일성을 향상시켰습니다.",
       },
     ],
     gitLink: "https://github.com/inggu96/tickerBell-front",
@@ -90,7 +90,7 @@ export const PlotData: IPlotData[] = [
           "전역 상태관리 라이브러리중 flux 패턴의 기본적인 동작 원리를 이해하기위해 Redux를 사용했으며 api를 리덕스로 관리해 잦은 렌더링이 발생하지않게 전역으로 사용했으며 로딩과 에러처리 또한 리덕스를 사용하여 관리하였습니다",
       },
       {
-        name: "Styled-components",
+        name: "css-in-js",
         caption:
           "컴포넌트 위주의 프로젝트에서 개발 효율성을 중요시 하고, 필요한 CSS 스타일 요소만 로딩하기 때문에 사용하게 되었습니다.",
       },

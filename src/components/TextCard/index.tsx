@@ -55,7 +55,7 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
                     <ul
                       key={key}
                       onClick={() => setSelectedStackItem(item.caption)}
-                      className={`flex flex-wrap -mb-px  border-b border-gray-200 dark:border-gray-700 mb-4`}
+                      className={`flex flex-wrap -mb-px  border-b border-gray-200 mb-4`}
                     >
                       <li className="mr-2">
                         <button
@@ -65,7 +65,7 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
                 ? "text-indigo-500 border-indigo-500"
                 : "text-gray-500 hover:text-gray-600 hover:border-gray-300"
             }
-            dark:text-gray-400 dark:hover:text-gray-300 rounded-t-lg`}
+         rounded-t-lg`}
                         >
                           {item.name}
                         </button>
@@ -75,7 +75,7 @@ export const TextCard = ({ data }: { data: IPlotData | IActData }): JSX.Element 
                 })}
               </div>
 
-              <div className="relativebg-gray-50 p-4 rounded-lg dark:bg-gray-800 shadow ">
+              <div className="relativebg-gray-50 p-4 rounded-lgshadow ">
                 {selectedStackItem && <div>{selectedStackItem}</div>}
               </div>
             </>

@@ -16,7 +16,7 @@ export const HomeList = () => {
             <a href="https://github.com/inggu96">
               <img src="https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png" width={60} />
             </a>
-            <a href="https://github.com/inggu96">
+            <a href="https://velog.io/@96_inggu">
               <img src="https://cdn.icon-icons.com/icons2/3915/PNG/512/velog_logo_icon_249278.png" width={40} />
             </a>
           </div>
