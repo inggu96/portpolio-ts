@@ -1,37 +1,57 @@
-export const PlotData: IPlotData[] = [
+export const LinkData: ILinkData[] = [
   {
     id: 1,
-    title: "티켓벨",
-    period: "제작기간 :23.09.20. ~ 진행중",
-    caption:
-      "티켓벨 공연예매를 보다 편하게 예약하기위한 서비스입니다 , 공연 등록자와 예매자를 권한에 맞게 회원을 등록해 공연 등록 및 예매가 가능한 서비스입니다. 프론트엔드 2명 , 백엔드 2명과 협업하였습니다",
-    plot: ["이벤트 등록 폼 구현", "이벤트 등록내역 및 예약내역 구현 ", "이벤트 상세페이지 구현"],
-    stack: [
-      {
-        name: "Next",
-        caption:
-          "SEO에 취약한 React를 보완하기에 위해 Next를 사용했으며 SSR의 이점과 폴더구조의 라우팅 이해하기 위해 사용하였습니다",
-      },
-      {
-        name: "Typescript",
-        caption:
-          "함수나 객체에 들어가는 구조에 타입을 정의함으로써 인자나 프로퍼티의 자동완성으로 개발 진행할 때 편의성을 얻을 수 있습니다. 또한 함수, 객체의 값들을 실행 전에 타입이 틀린 부분을 발견하여 실행 후에 에러를 방지할 수 있습니다.",
-      },
-      {
-        name: "Recoil",
-        caption: "리덕스의 보일러 플레이트를 보완하기위해 높은 점유율로 사용되고있는 Recoil을 사용했습니다. ",
-      },
-      {
-        name: "tailwind",
-        caption: "유지관리와 코드의 통일성을 위해 tailwind를 사용하여 유지 관리과 통일성을 향상시켰습니다.",
-      },
-    ],
+    stack: ["Next", "Typescript", "redux-toolkit", "Mui"],
+    pubLink: "https://onlyou-v2-front.vercel.app/matching",
+    pubImage: "only/logo.png",
+    figmaLink: "",
+    figmaImage: "",
+  },
+  {
+    id: 2,
+    stack: ["Next", "Typescript", "Recoil", "tailwind"],
     gitLink: "https://github.com/inggu96/tickerBell-front",
     gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
-    pubLink: "https://tickerbell-front.pages.dev/",
+    pubLink: "https://ticker-bell-front.vercel.app/",
     pubImage:
       "https://e7.pngegg.com/pngimages/285/477/png-clipart-web-development-web-design-internet-web-hosting-service-world-wide-web-logo-symmetry-thumbnail.png",
+    figmaLink: "",
+    figmaImage: "",
   },
+  {
+    id: 3,
+    stack: ["React", "Typescript", "Justand", "React-Table"],
+    gitLink: "https://github.com/inggu96/curing",
+    gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
+    pubLink: "https://ticker-bell-front.vercel.app/",
+    pubImage: "",
+    figmaLink: "",
+    figmaImage: "",
+  },
+  {
+    id: 4,
+    stack: ["React", "JavaScript", "Redux", "React-Table"],
+    gitLink: "https://github.com/inggu96/Weply",
+    gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
+    pubLink: "http://weply.s3-website.ap-northeast-2.amazonaws.com/",
+    pubImage: "https://user-images.githubusercontent.com/122377401/255330812-33626ba9-ca9e-4071-8ce4-9031770b22ea.png",
+    figmaLink: "",
+    figmaImage: "",
+  },
+  {
+    id: 5,
+    stack: ["React", "JavaScript", "Scss", "framer-motion"],
+    gitLink: "https://github.com/inggu96/select_movie",
+    gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
+    pubLink: "http://test-imagine.s3-website.ap-northeast-2.amazonaws.com/",
+    pubImage: "https://user-images.githubusercontent.com/122377401/259013017-1935dea4-2631-4279-b79b-e8cc69eb6e20.jpeg",
+    figmaLink:
+      "https://www.figma.com/file/OwPpYBki8yOF4kTeYx4GO1/1%EC%A1%B0-%EB%AC%B4%EB%B9%84%EC%85%80%EB%A0%89?type=design&node-id=0%3A1&mode=design&t=irg1sHUdKbJeonc3-1",
+    figmaImage: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png",
+  },
+];
+
+export const PlotData: IPlotData[] = [
   {
     id: 2,
     title: "큐링이노스",
@@ -64,6 +84,8 @@ export const PlotData: IPlotData[] = [
     gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
     pubLink: "",
     pubImage: "",
+    figmaLink: "",
+    figmaImage: "",
   },
 
   {
@@ -99,6 +121,8 @@ export const PlotData: IPlotData[] = [
     gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
     pubLink: "http://weply.s3-website.ap-northeast-2.amazonaws.com/",
     pubImage: "https://user-images.githubusercontent.com/122377401/255330812-33626ba9-ca9e-4071-8ce4-9031770b22ea.png",
+    figmaLink: "",
+    figmaImage: "",
   },
 
   {
@@ -106,8 +130,8 @@ export const PlotData: IPlotData[] = [
     title: "무비셀렉터",
     period: "제작기간 : 23.03.13 ~ 04.14",
     caption:
-      "무비셀렉터는 영화평점등록 서비스입니다. 코드스테이츠 부트캠프에서 진행한 팀프로젝트 작업이며 , 메인페이지와 프리뷰페이지를 맡아서 구현하였습니다 Framer-motion을 이용한 애니메이션 작업을 중점적으로 작업했으며, 현재는 서버배포가 끝나 깃허브 리드미에서 간략하게 확인이 가능합니다 추후 Django를 사용해 다시 배포할 예정입니다",
-    plot: ["메인페이지 구현", "프리뷰페이지 구현"],
+      "무비셀렉터는 영화평점등록 서비스입니다. 코드스테이츠 부트캠프에서 진행한 팀프로젝트 작업이며 , 메인페이지와 프리뷰페이지와 전체 디자인 기획을 맡아서 구현하였습니다 Framer-motion을 이용한 애니메이션 작업을 중점적으로 작업했으며 디자인은 피그마를 이용해 팀원들과 빠른 소통과 명확한 의도를 담을 수 있게 노력하였습니다 , 현재는 서버배포가 끝나 깃허브 리드미에서 간략하게 확인이 가능합니다 추후 Django를 사용해 다시 배포할 예정입니다",
+    plot: ["메인페이지 구현", "프리뷰페이지 구현", "디자인 기획"],
     stack: [
       {
         name: "JavaScript",
@@ -128,6 +152,9 @@ export const PlotData: IPlotData[] = [
     gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
     pubLink: "http://test-imagine.s3-website.ap-northeast-2.amazonaws.com/",
     pubImage: "https://user-images.githubusercontent.com/122377401/259013017-1935dea4-2631-4279-b79b-e8cc69eb6e20.jpeg",
+    figmaLink:
+      "https://www.figma.com/file/OwPpYBki8yOF4kTeYx4GO1/1%EC%A1%B0-%EB%AC%B4%EB%B9%84%EC%85%80%EB%A0%89?type=design&node-id=0%3A1&mode=design&t=irg1sHUdKbJeonc3-1",
+    figmaImage: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png",
   },
 ];
 export const ActData: IActData[] = [
