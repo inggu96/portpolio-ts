@@ -89,15 +89,27 @@ export const TicketProject = () => {
               <p className="mb-4 text-blueGray-500">
                 프로젝트는 프론트엔드 2명, 백엔드 2명으로 구성된 팀에서 진행되었습니다.
               </p>
-              <p className="mb-4 text-blueGray-500 lg:text-2xl md:text-lg">✔️ 이벤트 등록 폼 구현</p>
-              <p className="mb-4 text-blueGray-500 lg:text-2xl md:text-lg">✔️ 이벤트 등록내역 및 예약내역 구현</p>
-              <p className="mb-4 text-blueGray-500 lg:text-2xl md:text-lg">✔️ 이벤트 메인페이지 , 상세페이지 구현</p>
-              <p className="mb-4 text-blueGray-500">
-                <strong>6년 경력의 프론트엔드 개발자와 함께 작업하며 </strong>
-                <strong>버셀을 통한 CI/CD 배포 , next.js v13의 앱라우팅 방식</strong> 등 <br />
-                리드 개발자의 지도 하에 코드 리뷰와 리팩토링을 진행했으며, 백엔드 개발자와의 협업을 통해 효과적인 소통
-                방법을 배웠습니다.
+              <p className="mb-4 text-blueGray-500 lg:text-2xl md:text-lg">
+                ✔️ useMutation을 이용한 이벤트 등록 폼 구현
               </p>
+              <p className="mb-4 text-blueGray-500 lg:text-2xl md:text-lg">✔️ 이벤트 등록내역 및 예약내역 구현</p>
+              <p className="mb-4 text-blueGray-500 lg:text-2xl md:text-lg">
+                ✔️ 디테일페이지 , 이벤트 등록내역 및 예약내역 구현
+              </p>
+              <p className="mb-4 text-blueGray-500 lg:text-2xl md:text-lg">
+                ✔️ 잦은 렌더링 유발하던 메인페이지를 useQuery을 사용해 데이터캐싱구현
+              </p>
+              <p className="mb-4 text-blueGray-500">
+                <strong>동료 프론트엔드 개발자와 함께 작업하며 </strong>
+                <strong>버셀을 통한 CI/CD 배포 , next.js v13의 앱라우팅 방식</strong> 등 <br />
+                axios를 사용해 데이터 통신 후 인스턴스처리 해주었고 useQuery를 사용해 캐싱작업으로 데이터패칭을
+                진행했습니다 또한 , 동료 개발자의 소통 하에 코드 리뷰와 리팩토링을 진행했으며, 백엔드 개발자와의 협업을
+                통해 효과적인 소통 방법을 배웠습니다.
+              </p>
+              <p className="mb-2 text-black lg:text-2xl md:text-lg">관련 포스팅</p>
+              <a href="https://velog.io/@96_inggu/Portal-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-modal-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0">
+                <p className="text-xs text-gray-500 lg:text-1xl md:text-md">🔗. Portal 사용해서 modal 구현하기</p>
+              </a>
             </div>
           </div>
         </div>

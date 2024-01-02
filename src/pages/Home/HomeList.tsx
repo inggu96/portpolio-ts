@@ -55,10 +55,12 @@ export const HomeList = () => {
                   새로움과 도전을 즐기는 개발자 이인국입니다
                 </h1>
                 <p className="block mt-4 text-lg font-normal text-gray-600">
-                  <strong>웹 퍼블리싱</strong>과 <strong>프론트엔드 부트캠프 과정</strong>을 수료했습니다.
+                  <strong>안녕하세요. 팀원과의 협업과 규칙을 중시하는 프론트엔드 개발자 이인국입니다. </strong>
                   <br />
-                  또한 <strong>실무능력 향상을 위한 next와 타입스크립트를 사용해 꾸준히 팀 프로젝트를 진행</strong>
-                  했으며 , 밝고 적극적인 성격을 활용해 팀원과의 원활한 협업과 소통이 가능합니다
+                  <br />
+                  기술적인 문제 해결과 지속적인 학습에 열정을 가지고 있으며, 이를 실제프로젝트에 적용하는데 힘쓰고
+                  있습니다 데이터와 UI 로직의 분리를 통해 가독성 높은 코드 작성을 지향하며, 이를 통해 팀의 효율성을
+                  높이는 데 기여하기 위해 노력하고 있습니다.
                 </p>
                 <p className="block mt-4 text-lg font-normal text-gray-600">
                   최근 프로젝트에서는 최신
