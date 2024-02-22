@@ -1,0 +1,54 @@
+body {
+  font-family:
+    Pretendard,
+    /* 메인 폰트 */ -apple-system,
+    BlinkMacSystemFont,
+    /* iOS, 맥OS 대응 */ Roboto,
+    /* 안드로이드 대응 */ "Segoe UI",
+    /* 윈도우 대응 */ Arial,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    /* 기타 OS 대응 */ "Apple Color Emoji",
+    /* 애플 이모지 대응 */ "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    /* 윈도우 이모지 대응 */ sans-serif; /* 모든 기기 대응 */
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 145%; /* 23.2px */
+  color: black;
+  background-color: #fff;
+}
+
+div {
+  box-sizing: border-box;
+  display: block;
+}
+
+#root {
+  background-color: #fff;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  font-family:
+    Pretendard,
+    /* 메인 폰트 */ -apple-system,
+    BlinkMacSystemFont,
+    /* iOS, 맥OS 대응 */ Roboto,
+    /* 안드로이드 대응 */ "Segoe UI",
+    /* 윈도우 대응 */ Arial,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    /* 기타 OS 대응 */ "Apple Color Emoji",
+    /* 애플 이모지 대응 */ "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    /* 윈도우 이모지 대응 */ sans-serif; /* 모든 기기 대응 */
+}
