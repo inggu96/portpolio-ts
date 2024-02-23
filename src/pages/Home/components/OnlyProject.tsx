@@ -106,6 +106,10 @@ export const OnlyProject = () => {
   /> */}
           </div>
         </div>
+        <div>
+          <p className="px-6 mb-5 text-xl font-bold text-blue-500 xl:text-lg">화면 플로우</p>
+          <img src="only/onlyou-flow.png" alt="flow" />
+        </div>
       </div>
     </section>
   );
