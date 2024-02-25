@@ -58,7 +58,8 @@ export const PlotData: IPlotData[] = [
     period: "제작기간 : 2023.05.20 ~ 07.31",
     caption:
       "위플리는 유튜브 Api를 사용해 영상을 뮤직플레이어로 사용이 가능한 서비스입니다.리액트 활용와 자료구조를 추가적으로 학습하고 적용하기위해 진행한 개인 프로젝트입니다",
-    plot: ["Youtube Api를 사용한 유튜브 영상 뮤직플레이어 ", "전체 레이아웃 구성과 인기리스트 및 검색페이지 구현"],
+
+    plot: ["Youtube Api를 사용한 유튜브 영상 뮤직플레이어 ", "전체 레이아웃 구성과 소셜로그인 및 인기리스트 구현"],
     stack: [
       {
         name: "JavaScript",
@@ -83,7 +84,7 @@ export const PlotData: IPlotData[] = [
     ],
     gitLink: "https://github.com/inggu96/Weply",
     gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
-    pubLink: "http://weply.s3-website.ap-northeast-2.amazonaws.com/",
+    pubLink: "https://weply-2rj8ev4h3-inguks-projects.vercel.app/",
     pubImage: "https://user-images.githubusercontent.com/122377401/255330812-33626ba9-ca9e-4071-8ce4-9031770b22ea.png",
     figmaLink: "",
     figmaImage: "",
