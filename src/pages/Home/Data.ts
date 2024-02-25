@@ -1,7 +1,7 @@
 export const LinkData: ILinkData[] = [
   {
     id: 1,
-    stack: ["Next", "Typescript", "redux-toolkit", "Mui"],
+    stack: ["Next", "Typescript", "redux", "Mui"],
     pubLink: "https://onlyou-v2-front.vercel.app/matching",
     pubImage: "only/logo.png",
     figmaLink: "",
