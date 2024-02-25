@@ -51,6 +51,7 @@ export const OnlyProject = () => {
             </div>
           </div>
           <div className="relative flex flex-col w-full pt-2 mt-2 mb-6 shadow-lg ounded-lg">
+            <p className="px-6 mb-5 text-xl font-bold text-blue-500 xl:text-lg">시연화면</p>
             <Slider {...settings}>
               <div>
                 <img
@@ -95,20 +96,70 @@ export const OnlyProject = () => {
                   width={180}
                   height={200}
                 />
+                <p className="p-2 m-3 text-lg text-center xl:text-sm">각 화면별 모달구성</p>
               </div>
             </Slider>
-            {/* <img
-                src="/ticket.png"
-                alt="Logo"
-                className="absolute left-0 m-4 bg-white bottom-20"
-                width={90}
-                height={40}
-  /> */}
           </div>
-        </div>
-        <div>
-          <p className="px-6 mb-5 text-xl font-bold text-blue-500 xl:text-lg">화면 플로우</p>
-          <img src="only/onlyou-flow.png" alt="flow" />
+          <div className="relative flex flex-col w-full pt-2 mt-2 mb-6 shadow-lg ounded-lg">
+            <p className="px-6 mb-5 text-xl font-bold text-blue-500 xl:text-lg">화면 플로우 및 아키텍쳐</p>
+            <Slider {...settings}>
+              <div>
+                <img
+                  alt="Slide 1"
+                  src="only/onlyou-flow.png"
+                  className="flex items-center mx-auto align-middle rounded-t-lg "
+                  width={500}
+                  height={200}
+                />
+                <p className="p-2 m-3 text-lg text-center xl:text-sm">피그마로 구현한 온리유 전체 화면 플로우</p>
+              </div>
+
+              <div className="flex items-center justify-center h-full">
+                <img
+                  alt="Slide 1"
+                  src="only/architecture.png"
+                  className="mx-auto align-middle rounded-t-lg "
+                  width={500}
+                  height={200}
+                />
+                <p className="p-2 m-3 text-lg text-center xl:text-sm">배포 환경 및 구조</p>
+              </div>
+            </Slider>
+          </div>
+          <div className="relative flex flex-col w-full pt-2 mt-2 mb-6 shadow-lg ounded-lg">
+            <p className="px-6 mb-5 text-xl font-bold text-blue-500 xl:text-lg">성과데이터</p>
+            <Slider {...settings}>
+              <div>
+                <img
+                  alt="Slide 1"
+                  src="only/chart1.png"
+                  className="flex items-center mx-auto align-middle rounded-t-lg "
+                  width={500}
+                  height={200}
+                />
+                <p className="p-1 m-2 text-lg text-center xl:text-sm">
+                  항목별 편지추가 , 직관적 UI와 UX를 개선해 7.1%였던 성사율을 14.6%로 이전대비 2배 상승시키는데
+                  기여했습니다
+                </p>
+                <p className="p-1 m-3 text-lg text-center xl:text-sm">총 매칭수 7076회 → 성사수 509회</p>
+              </div>
+
+              <div className="flex items-center justify-center h-full">
+                <img
+                  alt="Slide 1"
+                  src="only/chart2.png"
+                  className="mx-auto align-middle rounded-t-lg "
+                  width={500}
+                  height={200}
+                />
+                <p className="p-1 m-2 text-lg text-center xl:text-sm">
+                  항목별 편지추가 , 직관적 UI와 UX를 개선해 7.1%였던 성사율을 14.6%로 이전대비 2배 상승시키는데
+                  기여했습니다
+                </p>
+                <p className="p-1 m-3 text-lg text-center xl:text-sm">총 매칭수 7076회 → 성사수 509회</p>
+              </div>
+            </Slider>
+          </div>
         </div>
       </div>
     </section>
