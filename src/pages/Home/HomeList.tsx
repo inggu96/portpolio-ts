@@ -43,16 +43,16 @@ export const HomeList = () => {
                 <h1 className="mb-3 text-lg font-bold leading-tight lg:text-2xl">
                   소통에서 답을 찾는 프론트엔드 개발자 이인국입니다.
                 </h1>
-                <p className="block mt-4 text-xs font-normal text-gray-600 sm:text-base sm:mt-2">
+                <p className="block mt-4 text-lg font-normal text-gray-600 sm:text-base sm:mt-2">
                   매 프로젝트마다 <strong>상황에 맞게 필요한 기술을 사용하기위해</strong> 노력하고있으며, 서버사이드의
                   중요성을 강조한 현 시장 트렌드를 파악하여 Next를 적극 사용했습니다.
                 </p>
-                <p className="block mt-4 text-xs font-normal text-gray-600 sm:text-base sm:mt-2">
+                <p className="block mt-4 text-lg font-normal text-gray-600 sm:text-base sm:mt-2">
                   <strong>SSR의 이점을 극대화</strong>하기 위한 <strong>SWR 사용</strong>과
                   <strong>헤더 쿠키를 사용해 보안 강화</strong>에 집중했으며, 이전 직무인 인력소장의 경험에서 배운
                   고객관점의 사고를 통해 <strong>사용자 관점에서의시각</strong> 에서 개발하려고 노력합니다.
                 </p>
-                <p className="block mt-4 text-xs font-normal text-gray-600 sm:text-base sm:mt-2">
+                <p className="block mt-4 text-lg font-normal text-gray-600 sm:text-base sm:mt-2">
                   <strong>소통을 어려워하는 팀원에게는</strong> 먼저 의견을 공유하는 방법으로 능동적인 팀워크를
                   구성하는데 기여했습니다.
                 </p>

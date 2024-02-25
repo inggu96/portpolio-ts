@@ -84,7 +84,7 @@ export const PlotData: IPlotData[] = [
     ],
     gitLink: "https://github.com/inggu96/Weply",
     gitImage: "https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png",
-    pubLink: "https://weply-2rj8ev4h3-inguks-projects.vercel.app/",
+    pubLink: "https://weply.vercel.app/",
     pubImage: "https://user-images.githubusercontent.com/122377401/255330812-33626ba9-ca9e-4071-8ce4-9031770b22ea.png",
     figmaLink: "",
     figmaImage: "",
