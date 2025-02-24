@@ -2,8 +2,8 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { LinkData } from "@/pages/Home/Data";
-import { NextArrow, PrevArrow } from "./Arrow";
+import { LinkData } from "@/constants/About";
+import { NextArrow, PrevArrow } from "@/components/Arrow";
 
 const OnlyProject = () => {
   const settings = {

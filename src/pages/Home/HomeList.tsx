@@ -3,10 +3,10 @@ import { useMemo } from "react";
 import { Progressbar } from "@/components/Progressbar";
 import { TextCard } from "@/components/TextCard";
 
-import { ActData, PlotData } from "./Data";
+import { ActData, PlotData } from "../../constants/About";
 import { Analytics } from "@vercel/analytics/react";
-import TicketProject from "@/components/TicketProject";
-import OnlyProject from "@/components/OnlyProject";
+import TicketProject from "@/pages/Home/sections/TicketProject";
+import OnlyProject from "@/pages/Home/sections/OnlyProject";
 
 export const HomeList = () => {
   const PlotCardData = useMemo(() => PlotData, []);
