@@ -15,8 +15,9 @@ const SideProjectSection = () => {
         <CardContent className="p-6">
           <div className="flex justify-between items-start">
             <div>
-              <h3 className="text-xl font-medium">MOGOTS (モゴッツ)</h3>
-              <p className="mt-1 text-gray-600">K-POP 굿즈 크로스보더 커머스 플랫폼</p>
+              <h3 className="text-xl font-medium">Mogotsu (もごつ)</h3>
+              <p className="mt-1 text-gray-600">Full Stack Engineer</p>
+              <p className="mt-1 text-gray-600">K-POP 패션/굿즈 크로스보더 커머스 플랫폼</p>
             </div>
             <Badge variant="secondary">2024.06 ~ Present</Badge>
           </div>
@@ -28,7 +29,7 @@ const SideProjectSection = () => {
             <ul className="space-y-2 text-gray-700">
               <li className="flex gap-2 items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full" />
-                Next.js , Nest.js , TypeScript 기반 웹사이트 풀스택 개발
+                Next.js , TypeScript , Nest.js , Prisma 기반 웹사이트 풀스택 개발
               </li>
               <li className="flex gap-2 items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full" />
