@@ -4,6 +4,7 @@ import { LinkData } from "@/constants/About";
 
 import Slider from "react-slick";
 import { NextArrow, PrevArrow } from "@/components/Arrow";
+import { IoLogoGithub } from "react-icons/io";
 
 const TicketProject = () => {
   const settings = {
@@ -15,7 +16,7 @@ const TicketProject = () => {
     prevArrow: <PrevArrow />,
   };
   return (
-    <section className="container relative pt-16 mx-auto bg-blueGray-50">
+    <div className="container relative pt-16 mx-auto bg-blueGray-50">
       <div className="flex flex-wrap items-center">
         {/* 첫 번째 칼럼 */}
         <div className="px-6 mr-auto ml-auto w-full md:px-4">
@@ -29,7 +30,7 @@ const TicketProject = () => {
               </p>
               <p className="p-2 h-10 rounded-full shadow">
                 <a href={LinkData[1].gitLink}>
-                  <img src={LinkData[1].gitImage} alt="GitLink" width={30} />
+                  <IoLogoGithub size={25} />
                 </a>
               </p>
             </div>
@@ -79,7 +80,7 @@ const TicketProject = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

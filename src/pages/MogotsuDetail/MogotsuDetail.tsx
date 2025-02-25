@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/common/ui/card";
+import { Button } from "@/components/common/ui/button";
 import { useNavigate } from "react-router-dom";
 import { mogotsuDetail } from "@/constants/MogotsuDetail";
 

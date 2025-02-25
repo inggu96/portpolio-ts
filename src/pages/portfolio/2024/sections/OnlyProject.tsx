@@ -15,7 +15,7 @@ const OnlyProject = () => {
     prevArrow: <PrevArrow />,
   };
   return (
-    <section className="container relative pt-16 mx-auto bg-blueGray-50">
+    <div className="container relative pt-16 mx-auto bg-blueGray-50">
       <div className="flex flex-wrap items-center">
         {/* 첫 번째 칼럼 */}
         <div className="flex-auto px-6 py-2 mr-auto ml-auto w-full md:px-4">
@@ -56,7 +56,7 @@ const OnlyProject = () => {
               <div>
                 <img
                   alt="Slide 1"
-                  src="only/main.gif"
+                  src="/only/main.gif"
                   className="flex items-center mx-auto align-middle rounded-t-lg"
                   width={180}
                   height={200}
@@ -69,7 +69,7 @@ const OnlyProject = () => {
               <div className="flex justify-center items-center h-full">
                 <img
                   alt="Slide 1"
-                  src="only/login.gif"
+                  src="/only/login.gif"
                   className="mx-auto align-middle rounded-t-lg"
                   width={180}
                   height={200}
@@ -81,7 +81,7 @@ const OnlyProject = () => {
               <div>
                 <img
                   alt="Slide 1"
-                  src="only/letter.gif"
+                  src="/only/letter.gif"
                   className="mx-auto align-middle rounded-t-lg"
                   width={180}
                   height={200}
@@ -91,7 +91,7 @@ const OnlyProject = () => {
               <div>
                 <img
                   alt="Slide 1"
-                  src="only/modal.gif"
+                  src="/only/modal.gif"
                   className="mx-auto align-middle rounded-t-lg"
                   width={180}
                   height={200}
@@ -106,7 +106,7 @@ const OnlyProject = () => {
               <div>
                 <img
                   alt="Slide 1"
-                  src="only/onlyou-flow.png"
+                  src="/only/onlyou-flow.png"
                   className="flex items-center mx-auto align-middle rounded-t-lg"
                   width={500}
                   height={200}
@@ -117,7 +117,7 @@ const OnlyProject = () => {
               <div className="flex justify-center items-center h-full">
                 <img
                   alt="Slide 1"
-                  src="only/architecture.png"
+                  src="/only/architecture.png"
                   className="mx-auto align-middle rounded-t-lg"
                   width={500}
                   height={200}
@@ -132,7 +132,7 @@ const OnlyProject = () => {
               <div>
                 <img
                   alt="Slide 1"
-                  src="only/chart1.png"
+                  src="/only/chart1.png"
                   className="flex items-center mx-auto align-middle rounded-t-lg"
                   width={500}
                   height={200}
@@ -147,7 +147,7 @@ const OnlyProject = () => {
               <div className="flex justify-center items-center h-full">
                 <img
                   alt="Slide 1"
-                  src="only/chart2.png"
+                  src="/only/chart2.png"
                   className="mx-auto align-middle rounded-t-lg"
                   width={500}
                   height={200}
@@ -162,7 +162,7 @@ const OnlyProject = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
