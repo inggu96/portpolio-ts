@@ -11,7 +11,7 @@ export const projects: Project[] = [
       "심박수, 운동량 등 건강 데이터 실시간 모니터링",
       "연구 데이터 자동 집계 및 엑셀 추출 기능 개발",
     ],
-    techStack: ["React", "D3.js", "Node.js", "MySQL"],
+    techStack: ["PHP", "MySQL", "JavaScript", "GNU Board", "JQuery"],
   },
   {
     title: "VR Story 브랜딩 프로젝트",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       "24년도 경제진흥원 아이디어 지원화 사업 1등 달성",
       "차년도 고도화 프로젝트 컨설팅 수주",
     ],
-    techStack: ["php", "jQuery", "MySQL"],
+    techStack: ["PHP", "MySQL", "JavaScript", "GNU Board", "JQuery"],
   },
   {
     title: "내셔널PPE 3D 웹 프로젝트",
