@@ -9,7 +9,7 @@ export const MogotsuDetail = () => {
   return (
     <div className="container px-4 py-12 mx-auto">
       <div className="flex gap-4 items-center mb-8">
-        <Button variant="outline" onClick={() => navigate("/page")}>
+        <Button variant="outline" onClick={() => navigate("/")}>
           ← 돌아가기
         </Button>
         <h1 className="text-4xl font-bold">{mogotsuDetail.title}</h1>

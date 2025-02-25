@@ -2,32 +2,6 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
-    title: "MOGOTSU - K-POP 패션/굿즈 커머스 플랫폼",
-    period: "2024.05 ~ 2025.02",
-    role: "개발 리드",
-    description: "일본 K-POP 팬들을 위한 공식 굿즈 직구 플랫폼 구축",
-    achievements: [
-      "Next.js 14 기반 크로스보더 커머스 플랫폼 구축",
-      "LINE 소셜 로그인, KG이니시스 결제, EXMATE 배송 추적 시스템 통합",
-      "850+ 커밋을 통한 지속적인 기능 개선 및 성능 최적화",
-      "일 평균 30,000 MAU, 결제 처리 1,000건 달성",
-    ],
-    techStack: ["Next.js", "tailwind", "Next ui", "nest.js", "TypeScript", "mysql", "SWR", "Meilisearch", "Sharp"],
-  },
-  {
-    title: "완도해양축제 VR 전시",
-    period: "2024.04",
-    role: "영업/운영 총괄",
-    description: "웹 대시보드 및 VR 투어 현장 전시 운영",
-    achievements: [
-      "대규모 행사장 환경에서의 VR 기기 운영 최적화",
-      "네트워크 문제 해결을 위한 대체 통신 시스템 구축",
-      "현장 관람객 대상 VR 투어 시스템 시연 및 교육",
-      "주최측 요구사항 실시간 대응 및 솔루션 제공",
-    ],
-    techStack: ["VR Hardware", "Network Management", "Customer Service"],
-  },
-  {
     title: "완도 웨어러블 대시보드",
     period: "2024.04~2024.06",
     role: "웹 개발 총괄",
@@ -84,7 +58,7 @@ export const projects: Project[] = [
     role: "웹 SDK 총괄",
     description: "Matterport 기반 전시장 가상화 프로젝트 개발 및 운영",
     achievements: [
-      "9,000줄의 하드코딩된 3D 위치값을 DB 시스템으로 마이그레이션",
+      "9,000줄의 하드코딩된 3D 위치값을 DB 시스템으로 마이그레이션 이후 직접 수동으로 입력하던 포지션값들을 동적패널을 구성해 화면에서 바로 위치시키는 자동화 시스템 구축",
       "에스컬레이터, 엘리베이터, 공간 텔레포트 등 커스텀 기능 개발",
       "3D 파티션 개별 토글 시스템 구현",
       "관리자 대시보드를 통한 실시간 3D 공간 데이터 관리 시스템 구축",
