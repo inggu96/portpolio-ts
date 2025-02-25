@@ -25,12 +25,29 @@ const SideProjectSection = () => {
             <p className="text-gray-700">
               일본 K-POP 팬들을 위한 공식 굿즈 직구 플랫폼으로, 자사몰 형태로 구축 및 운영
             </p>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex gap-2 items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                Next.js , Nest.js , TypeScript 기반 웹사이트 풀스택 개발
+              </li>
+              <li className="flex gap-2 items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                NCP 서버환경 구축 및 호스팅(vercel),도메인(godaddy) 세팅 및 인프라관리
+              </li>
+              <li className="flex gap-2 items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                UI/UX 디자인 및 프론트엔드/백앤드 구현
+              </li>
+              <li className="flex gap-2 items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                구글광고 세팅 및 애널리틱스를 이용한 유저 데이터 분석
+              </li>
+            </ul>
             <div className="flex flex-wrap gap-2">
               <Badge variant="outline">Next.js 14</Badge>
               <Badge variant="outline">TypeScript</Badge>
               <Badge variant="outline">SWR</Badge>
               <Badge variant="outline">Tailwind CSS</Badge>
-              <Badge variant="outline">shadcn/ui</Badge>
             </div>
             <div className="flex justify-end">
               <Button variant="outline" onClick={() => navigate("/projects/mogotsu")}>

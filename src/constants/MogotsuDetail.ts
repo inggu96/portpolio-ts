@@ -8,14 +8,14 @@ export const mogotsuDetail: ProjectDetail = {
   projectScale: {
     duration: "10개월",
     commits: "850+ commits",
-    teamSize: "프론트엔드 개발자 1명 , 백엔드 개발자 1명",
+    teamSize: "프론트엔드 기반 풀스텍 개발자 1명 , 백엔드 기반 풀스텍 개발자 1명 , 상품 MD 1명 , 마케터 1명 ",
   },
   performance: [
-    "월간 방문자 수 81,000명 기록",
-    "총 페이지뷰 135,000회 달성",
+    "월간 총 페이지뷰 135,000회 달성",
+    "주간 평균 사용자 2400명 달성",
     "LINE 소셜 로그인으로 회원가입 전환율 65% 증가",
     "EXMATE 배송 추적 자동화로 CS 문의 40% 감소",
-    "오픈 이후 1개월 만에 회원가입 200명 달성",
+    "총 일본 유저 수 200명 달성",
   ],
   developmentPhases: [
     {
@@ -62,7 +62,7 @@ export const mogotsuDetail: ProjectDetail = {
       details: [
         "이미지 최적화 및 CDN 활용",
         "Sharp 라이브러리 활용 이미지 처리",
-        "Google Ads 연동을 위한 상품 데이터 CSV 추출 자동화",
+        "Google Ads 연동을 위한 상품 데이터 CSV 추출 구현",
         "타겟 고객 세그먼트 데이터 기반 맞춤형 광고 구현",
         "상품 메타데이터를 활용한 사이트맵 자동 생성",
         "SEO 최적화 및 검색엔진 노출 개선",
