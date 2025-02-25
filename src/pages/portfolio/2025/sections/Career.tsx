@@ -36,7 +36,13 @@ const CareerSection = () => {
             </li>
           </ul>
           <div className="flex justify-end mt-4">
-            <Button variant="outline" onClick={() => navigate("/career")}>
+            <Button
+              variant="outline"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                navigate("/career");
+              }}
+            >
               자세히 보기
             </Button>
           </div>

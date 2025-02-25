@@ -8,7 +8,14 @@ export const CareerHistory = () => {
   const navigate = useNavigate();
   return (
     <div className="container px-4 py-12 mx-auto">
-      <h1 className="mb-8 text-4xl font-bold">Career History</h1>
+      <div className="flex gap-4 items-center mb-4">
+        <Button variant="outline" onClick={() => navigate("/")}>
+          ← 돌아가기
+        </Button>
+      </div>
+      <div className="flex gap-4 items-center mb-4">
+        <h1 className="text-4xl font-bold">Career History</h1>
+      </div>
       <div className="space-y-8">
         {projects.map((project, index) => (
           <Card key={index} className="w-full">
