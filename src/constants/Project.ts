@@ -12,6 +12,8 @@ export const projects: Project[] = [
       "연구 데이터 자동 집계 및 엑셀 추출 기능 개발",
     ],
     techStack: ["PHP", "MySQL", "JavaScript", "GNU Board", "JQuery"],
+    link: "https://www.wcare.kr/",
+    secure: true,
   },
   {
     title: "VR Story 브랜딩 프로젝트",
@@ -25,6 +27,8 @@ export const projects: Project[] = [
       "VR 투어 콘텐츠 통합 관리 시스템 개발",
     ],
     techStack: ["PHP", "MySQL", "JavaScript", "GNU Board", "JQuery"],
+    link: " https://vrstory.co.kr/",
+    secure: false,
   },
   {
     title: "이박스 AR 웹 시스템",
@@ -38,6 +42,8 @@ export const projects: Project[] = [
       "차년도 고도화 프로젝트 컨설팅 수주",
     ],
     techStack: ["PHP", "MySQL", "JavaScript", "GNU Board", "JQuery"],
+    link: "https://www.wcare.kr/",
+    secure: true,
   },
   {
     title: "내셔널PPE 3D 웹 프로젝트",
@@ -51,6 +57,8 @@ export const projects: Project[] = [
       "제품 부품별 인터랙티브 영상 제작 및 통합",
     ],
     techStack: ["Three.js", "Unreal Engine", "After Effects", "WebGL"],
+    link: "https://www.natppe.com/",
+    secure: false,
   },
   {
     title: "벡스코 가상화 프로젝트",
@@ -64,5 +72,7 @@ export const projects: Project[] = [
       "관리자 대시보드를 통한 실시간 3D 공간 데이터 관리 시스템 구축",
     ],
     techStack: ["Matterport SDK", "JavaScript", "MySQL", "Three.js", "php"],
+    link: "https://bexcos.mycafe24.com/",
+    secure: false,
   },
 ];

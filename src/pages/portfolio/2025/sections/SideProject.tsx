@@ -290,6 +290,13 @@ const SideProjectSection = () => {
 
             <div className="flex flex-wrap gap-4 justify-start mt-6">
               <Button
+                variant="default"
+                className="bg-blue-600 hover:bg-blue-700"
+                onClick={() => window.open("https://rca.kr/", "_blank")}
+              >
+                웹사이트 방문하기
+              </Button>
+              <Button
                 variant="outline"
                 onClick={() => openPdfModal("/docs/rainjo_initial_design.pdf", "레인조 - 디자인 초안")}
               >
@@ -297,13 +304,6 @@ const SideProjectSection = () => {
               </Button>
               <Button variant="outline" onClick={() => openPdfModal("/docs/rainjo_revision.pdf", "레인조 - 수정 문서")}>
                 수정 문서 보기
-              </Button>
-              <Button
-                variant="default"
-                className="bg-blue-600 hover:bg-blue-700"
-                onClick={() => window.open("https://rca.kr/", "_blank")}
-              >
-                웹사이트 방문하기
               </Button>
             </div>
           </CardContent>

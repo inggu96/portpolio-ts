@@ -5,4 +5,6 @@ export interface Project {
   description: string;
   achievements: string[];
   techStack: string[];
+  link: string;
+  secure: boolean;
 }
