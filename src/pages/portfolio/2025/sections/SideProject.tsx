@@ -34,20 +34,22 @@ const SideProjectSection = () => {
 
   return (
     <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-      <h2 className="mb-6 text-2xl font-semibold">Side Project</h2>
+      <h2 className="mb-4 md:mb-6 text-xl md:text-2xl font-semibold">Side Project</h2>
       <Card className="overflow-hidden">
-        <CardContent className="p-6">
-          <div className="flex justify-between items-start">
+        <CardContent className="p-4 md:p-6">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 md:gap-0">
             <div>
-              <h3 className="text-xl font-medium">Mogotsu (もごつ)</h3>
-              <p className="mt-1 text-gray-600">Full Stack Engineer</p>
-              <p className="mt-1 text-gray-600">K-POP 패션/굿즈 크로스보더 커머스 플랫폼</p>
+              <h3 className="text-lg md:text-xl font-medium">Mogotsu (もごつ)</h3>
+              <p className="text-sm md:text-base text-gray-600">Full Stack Engineer</p>
+              <p className="text-sm md:text-base text-gray-600">K-POP 패션/굿즈 크로스보더 커머스 플랫폼</p>
             </div>
-            <Badge variant="secondary">2024.06 ~ Present</Badge>
+            <Badge variant="secondary" className="self-start md:self-auto">
+              2024.06 ~ Present
+            </Badge>
           </div>
-          <Separator className="my-4" />
-          <div className="space-y-4">
-            <p className="text-gray-700">
+          <Separator className="my-3 md:my-4" />
+          <div className="space-y-3 md:space-y-4">
+            <p className="text-sm md:text-base text-gray-700">
               일본 K-POP 팬들을 위한 공식 굿즈 직구 플랫폼으로, 자사몰 형태로 구축 및 운영
             </p>
             <ul className="space-y-2 text-gray-700">
@@ -82,9 +84,12 @@ const SideProjectSection = () => {
             <div className="relative w-full overflow-hidden">
               <Swiper
                 modules={[Navigation]}
-                spaceBetween={24}
+                spaceBetween={16}
                 slidesPerView="auto"
                 className="mySwiper !pb-8"
+                breakpoints={{
+                  640: { spaceBetween: 24 },
+                }}
                 navigation={{
                   prevEl: ".swiper-custom-prev",
                   nextEl: ".swiper-custom-next",

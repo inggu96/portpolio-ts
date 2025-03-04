@@ -17,26 +17,28 @@ export const CareerHistory = () => {
   };
 
   return (
-    <div className="container px-4 py-12 mx-auto">
+    <div className="container px-4 py-8 md:py-12 mx-auto">
       <div className="flex gap-4 items-center mb-4">
-        <Button variant="outline" onClick={() => navigate("/")}>
+        <Button variant="outline" onClick={() => navigate("/")} className="text-sm md:text-base">
           ← 돌아가기
         </Button>
       </div>
       <div className="flex gap-4 items-center mb-4">
-        <h1 className="text-4xl font-bold">Career History</h1>
+        <h1 className="text-2xl md:text-4xl font-bold">Career History</h1>
       </div>
-      <div className="space-y-8">
+      <div className="space-y-6 md:space-y-8">
         {projects.map((project, index) => (
           <Card key={index} className="w-full">
-            <CardHeader>
-              <div className="flex justify-between items-start">
+            <CardHeader className="p-4 md:p-6">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 md:gap-0">
                 <div>
-                  <h2 className="text-2xl font-bold">{project.title}</h2>
-                  <p className="text-gray-500">{project.period}</p>
+                  <h2 className="text-xl md:text-2xl font-bold">{project.title}</h2>
+                  <p className="mt-1 text-sm md:text-base text-gray-600">{project.role}</p>
                 </div>
-                <div className="flex gap-2 items-center">
-                  <Badge variant="outline">{project.role}</Badge>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="self-start md:self-auto text-sm">
+                    {project.period}
+                  </Badge>
                   {project.title.includes("MOGOTSU") && (
                     <Button variant="outline" size="sm" onClick={() => navigate("/projects/mogotsu")}>
                       상세보기
@@ -45,23 +47,23 @@ export const CareerHistory = () => {
                 </div>
               </div>
             </CardHeader>
-            <CardContent>
-              <p className="mb-4 text-gray-700">{project.description}</p>
+            <CardContent className="p-4 md:p-6">
+              <p className="mb-4 text-sm md:text-base text-gray-700">{project.description}</p>
               <div className="mb-6">
-                <h3 className="mb-2 font-semibold">주요 성과</h3>
+                <h3 className="mb-2 text-base md:text-lg font-semibold">주요 성과</h3>
                 <ul className="pl-5 space-y-2 list-disc">
                   {project.achievements.map((achievement, i) => (
-                    <li key={i} className="text-gray-600">
+                    <li key={i} className="text-sm md:text-base text-gray-600">
                       {achievement}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div className="flex flex-wrap items-center gap-2">
                   <Button
                     variant="default"
-                    className="bg-blue-600 hover:bg-blue-700 disabled:opacity-50"
+                    className="bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-sm md:text-base h-8 md:h-10"
                     onClick={() => window.open(project.link, "_blank")}
                     disabled={project.secure}
                   >
@@ -71,9 +73,9 @@ export const CareerHistory = () => {
                     <Button
                       variant="outline"
                       onClick={() => openVideoModal("/dms/bexco.mp4")}
-                      className="flex items-center gap-1"
+                      className="flex items-center gap-1 text-sm md:text-base h-8 md:h-10"
                     >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -91,8 +93,8 @@ export const CareerHistory = () => {
                     </Button>
                   )}
                   {project.secure && (
-                    <span className="text-sm text-gray-500 flex items-center gap-1">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span className="text-xs md:text-sm text-gray-500 flex items-center gap-1">
+                      <svg className="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -104,9 +106,9 @@ export const CareerHistory = () => {
                     </span>
                   )}
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 md:gap-2">
                   {project.techStack.map((tech, i) => (
-                    <Badge key={i} variant="destructive">
+                    <Badge key={i} variant="destructive" className="text-xs md:text-sm px-2 py-0.5">
                       {tech}
                     </Badge>
                   ))}

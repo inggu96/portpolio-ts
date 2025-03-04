@@ -10,15 +10,17 @@ const CareerSection = () => {
 
   return (
     <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-16">
-      <h2 className="mb-6 text-2xl font-semibold">Current Position</h2>
+      <h2 className="mb-4 md:mb-6 text-xl md:text-2xl font-semibold">Current Position</h2>
       <Card className="overflow-hidden">
-        <CardContent className="p-6">
-          <div className="flex justify-between items-start">
+        <CardContent className="p-4 md:p-6">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 md:gap-0">
             <div>
-              <h3 className="text-xl font-medium">디엠스튜디오 O2O사업부</h3>
-              <p className="mt-1 text-gray-600">Full Stack Engineer</p>
+              <h3 className="text-lg md:text-xl font-medium">디엠스튜디오 O2O사업부</h3>
+              <p className="mt-1 text-sm md:text-base text-gray-600">Full Stack Engineer</p>
             </div>
-            <Badge variant="secondary">2024.03 ~ Present</Badge>
+            <Badge variant="secondary" className="self-start md:self-auto text-sm">
+              2024.03 ~ Present
+            </Badge>
           </div>
           <Separator className="my-4" />
           <ul className="space-y-2 text-gray-700">

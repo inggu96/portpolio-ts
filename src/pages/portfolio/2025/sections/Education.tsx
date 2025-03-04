@@ -23,20 +23,22 @@ const EducationSection = () => {
 
   return (
     <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mt-16">
-      <h2 className="mb-6 text-2xl font-semibold">Education</h2>
+      <h2 className="mb-4 md:mb-6 text-xl md:text-2xl font-semibold">Education</h2>
       <div className="space-y-4">
         {educations.map((education) => (
           <Card key={education.id} className="overflow-hidden">
-            <CardContent className="p-6">
-              <div className="flex justify-between items-start">
+            <CardContent className="p-4 md:p-6">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 md:gap-0">
                 <div>
-                  <h3 className="text-xl font-medium">{education.title}</h3>
-                  <p className="mt-1 text-gray-600">{education.position}</p>
+                  <h3 className="text-lg md:text-xl font-medium">{education.title}</h3>
+                  <p className="mt-1 text-sm md:text-base text-gray-600">{education.position}</p>
                 </div>
-                <Badge variant="secondary">{education.period}</Badge>
+                <Badge variant="secondary" className="self-start md:self-auto text-sm">
+                  {education.period}
+                </Badge>
               </div>
-              <Separator className="my-4" />
-              <p className="text-gray-700">{education.description}</p>
+              <Separator className="my-3 md:my-4" />
+              <p className="text-sm md:text-base text-gray-700">{education.description}</p>
             </CardContent>
           </Card>
         ))}
