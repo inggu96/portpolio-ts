@@ -88,11 +88,32 @@ const SideProjectSection = () => {
             <div className="mb-6">
               <h4 className="mb-3 text-xl font-medium">레인조 라이딩스쿨</h4>
               <p className="text-gray-700">
-                지인의 추천으로 맡게 된 외주 프로젝트로, 오토바이 라이딩스쿨 웹사이트를 디자인하고 개발했습니다.{" "}
+                지인의 추천으로 맡게 된 외주 프로젝트로, 라이딩스쿨 웹 리뉴얼 및 디자인/개발
               </p>
-              <p className="text-gray-700">
-                퇴근후에 작업했으며, 담당자와의 원활한 소통을 바탕으로 빠르고 효율적인 프로젝트 진행이 가능했습니다.
+              <Separator className="my-4" />
+              <p className="mb-4 text-gray-700">
+                기존에 라라벨로 빌드된 웹사이드 리뉴얼 업무를 맡았으며 프로젝트의 효율적인 진행을 위해 퇴근 후에 시간을
+                할애하여 작업을 진행했으며, 이 과정에서 담당자와 지속적이고 원활한 소통을 유지했습니다. 이러한 노력
+                덕분에 프로젝트를 빠르고 효과적으로 진행할 수 있었습니다
               </p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex gap-2 items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                  메인페이지 전체 ui 리뉴얼
+                </li>
+                <li className="flex gap-2 items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                  공지사항 및 교육과정 api 연동
+                </li>
+                <li className="flex gap-2 items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                  교육일정 예약시스템 지역 스케마 추가 및 필터(지역별,교육별,날짜별) 구현
+                </li>
+                <li className="flex gap-2 items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                  교육일정 모바일 ui 구현
+                </li>
+              </ul>
             </div>
 
             <div className="mb-6">
