@@ -4,19 +4,33 @@ import { Badge } from "@/components/common/ui/badge";
 import { Separator } from "@/components/common/ui/separator";
 import { Button } from "@/components/common/ui/button";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent } from "@/components/common/ui/dialog";
 import PDFViewer from "@/components/PDFViewer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Swiper as SwiperType } from "swiper/types";
 
 const SideProjectSection = () => {
   const navigate = useNavigate();
   const [isPdfModalOpen, setIsPdfModalOpen] = useState<boolean>(false);
   const [currentPdf, setCurrentPdf] = useState<{ path: string; title: string } | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number | null>(null);
+  const [swiper, setSwiper] = useState<SwiperType | null>(null);
+  const [swiperProgress, setSwiperProgress] = useState(0);
 
   const openPdfModal = (pdfPath: string, title: string) => {
     setCurrentPdf({ path: pdfPath, title });
     setIsPdfModalOpen(true);
   };
+
+  useEffect(() => {
+    if (currentImageIndex !== null && swiper) {
+      swiper.slideTo(currentImageIndex);
+    }
+  }, [currentImageIndex, swiper]);
 
   return (
     <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -64,6 +78,103 @@ const SideProjectSection = () => {
               <Badge variant="outline">SWR</Badge>
               <Badge variant="outline">Tailwind CSS</Badge>
             </div>
+
+            <div className="relative w-full overflow-hidden">
+              <Swiper
+                modules={[Navigation]}
+                spaceBetween={24}
+                slidesPerView="auto"
+                className="mySwiper !pb-8"
+                navigation={{
+                  prevEl: ".swiper-custom-prev",
+                  nextEl: ".swiper-custom-next",
+                }}
+                onSwiper={setSwiper}
+                onProgress={(swiper) => {
+                  setSwiperProgress(swiper.progress * 100);
+                }}
+                onSlideChange={(swiper) => {
+                  setSwiperProgress((swiper.activeIndex / (swiper.slides.length - 1)) * 100);
+                }}
+              >
+                {[...Array(12)].map((_, i) => (
+                  <SwiperSlide key={i} style={{ width: "170px" }}>
+                    <div
+                      className="transform transition-transform duration-300 hover:-translate-y-2"
+                      onClick={() => setCurrentImageIndex(i)}
+                    >
+                      <img
+                        src={`/mogotsu/mogotsu_${i + 1}.jpg`}
+                        alt={`Mogotsu Screenshot ${i + 1}`}
+                        className="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <button className="swiper-custom-prev absolute top-1/2 left-0 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/80 rounded-full shadow-md z-10 hover:bg-white transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button className="swiper-custom-next absolute top-1/2 right-0 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/80 rounded-full shadow-md z-10 hover:bg-white transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90px] h-1 bg-gray-200 rounded-full z-10">
+                <div
+                  className="h-full bg-black rounded-full transition-all duration-300"
+                  style={{ width: `${swiperProgress}%` }}
+                />
+              </div>
+            </div>
+
+            <Dialog open={currentImageIndex !== null} onOpenChange={() => setCurrentImageIndex(null)}>
+              <DialogContent className="max-w-[50vw] max-h-[90vh] p-0 bg-black/95 border-0">
+                {currentImageIndex !== null && (
+                  <Swiper
+                    initialSlide={currentImageIndex}
+                    modules={[Navigation]}
+                    navigation={{
+                      prevEl: ".modal-prev",
+                      nextEl: ".modal-next",
+                    }}
+                    onSwiper={(swiper) => {
+                      swiper.slideTo(currentImageIndex, 0);
+                    }}
+                    className="w-full h-[85vh] flex items-center justify-center"
+                  >
+                    {[...Array(12)].map((_, i) => (
+                      <SwiperSlide key={i} className="flex items-center justify-center">
+                        <img
+                          src={`/mogotsu/mogotsu_${i + 1}.jpg`}
+                          alt={`Mogotsu Screenshot ${i + 1}`}
+                          className="w-auto h-auto max-w-full max-h-[80vh] object-contain mx-auto"
+                        />
+                      </SwiperSlide>
+                    ))}
+                    <button
+                      className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white hover:text-gray-300 transition-colors z-50"
+                      onClick={() => setCurrentImageIndex(null)}
+                    >
+                      ✕
+                    </button>
+                    <button className="modal-prev absolute top-1/2 left-4 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-colors z-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                        <path d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                    <button className="modal-next absolute top-1/2 right-4 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-colors z-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                        <path d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </Swiper>
+                )}
+              </DialogContent>
+            </Dialog>
+
             <div className="flex justify-between">
               <Button
                 variant="default"

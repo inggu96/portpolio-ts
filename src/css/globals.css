@@ -52,3 +52,21 @@ div {
     "Segoe UI Symbol",
     /* 윈도우 이모지 대응 */ sans-serif; /* 모든 기기 대응 */
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Swiper 스타일 커스터마이징 */
+.mySwiper {
+  padding: 1.5rem 0;
+}
+
+.modalSwiper {
+  height: 100vh;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
