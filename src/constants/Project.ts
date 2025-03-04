@@ -74,5 +74,7 @@ export const projects: Project[] = [
     techStack: ["Matterport SDK", "JavaScript", "MySQL", "Three.js", "php"],
     link: "https://bexcos.mycafe24.com/",
     secure: false,
+    videoLink: "/dms/bexco.mp4",
+    addVideo: true,
   },
 ];

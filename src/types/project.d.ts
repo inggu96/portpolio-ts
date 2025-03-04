@@ -7,4 +7,6 @@ export interface Project {
   techStack: string[];
   link: string;
   secure: boolean;
+  videoLink?: string;
+  addVideo?: boolean;
 }

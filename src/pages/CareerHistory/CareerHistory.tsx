@@ -3,9 +3,19 @@ import { Card, CardContent, CardHeader } from "@/components/common/ui/card";
 import { Button } from "@/components/common/ui/button";
 import { useNavigate } from "react-router-dom";
 import { projects } from "@/constants/Project";
+import { useState } from "react";
+import { Dialog, DialogContent } from "@/components/common/ui/dialog";
 
 export const CareerHistory = () => {
   const navigate = useNavigate();
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState<string | null>(null);
+
+  const openVideoModal = (videoPath: string) => {
+    setCurrentVideo(videoPath);
+    setIsVideoModalOpen(true);
+  };
+
   return (
     <div className="container px-4 py-12 mx-auto">
       <div className="flex gap-4 items-center mb-4">
@@ -57,6 +67,29 @@ export const CareerHistory = () => {
                   >
                     웹사이트 방문하기
                   </Button>
+                  {project.addVideo && (
+                    <Button
+                      variant="outline"
+                      onClick={() => openVideoModal("/dms/bexco.mp4")}
+                      className="flex items-center gap-1"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      시연 자료
+                    </Button>
+                  )}
                   {project.secure && (
                     <span className="text-sm text-gray-500 flex items-center gap-1">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,6 +116,33 @@ export const CareerHistory = () => {
           </Card>
         ))}
       </div>
+
+      {/* Video Modal */}
+      <Dialog open={isVideoModalOpen} onOpenChange={setIsVideoModalOpen}>
+        <DialogContent className="max-w-4xl w-[90vw] p-0 bg-black">
+          <button
+            className="absolute right-4 top-4 rounded-sm transition-opacity hover:opacity-80 focus:outline-none  disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground z-50 bg-white p-1"
+            onClick={() => setIsVideoModalOpen(false)}
+          >
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path
+                d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03157 3.2184C3.80702 2.99385 3.44295 2.99385 3.2184 3.2184C2.99385 3.44295 2.99385 3.80702 3.2184 4.03157L6.68682 7.50005L3.2184 10.9685C2.99385 11.193 2.99385 11.5571 3.2184 11.7816C3.44295 12.0062 3.80702 12.0062 4.03157 11.7816L7.50005 8.31322L10.9685 11.7816C11.193 12.0062 11.5571 12.0062 11.7816 11.7816C12.0062 11.5571 12.0062 11.193 11.7816 10.9685L8.31322 7.50005L11.7816 4.03157Z"
+                fill="currentColor"
+                fillRule="evenodd"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+          {currentVideo && (
+            <div className="relative pt-[56.25%]">
+              <video className="absolute top-0 left-0 w-full h-full" controls autoPlay>
+                <source src={currentVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
