@@ -60,7 +60,16 @@ export const CareerHistory = () => {
                 </ul>
               </div>
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                <div className="flex flex-wrap items-center gap-2">
+                {/* tech stack badges - 모바일에서는 먼저 표시 */}
+                <div className="flex flex-wrap gap-1.5 md:gap-2 order-first md:order-last">
+                  {project.techStack.map((tech, i) => (
+                    <Badge key={i} variant="destructive" className="text-xs md:text-sm px-2 py-0.5">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+                {/* buttons - 모바일에서는 나중에 표시 */}
+                <div className="flex flex-wrap items-center gap-2 order-last md:order-first">
                   <Button
                     variant="default"
                     className="bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-sm md:text-base h-8 md:h-10"
@@ -105,13 +114,6 @@ export const CareerHistory = () => {
                       보안상 비공개
                     </span>
                   )}
-                </div>
-                <div className="flex flex-wrap gap-1.5 md:gap-2">
-                  {project.techStack.map((tech, i) => (
-                    <Badge key={i} variant="destructive" className="text-xs md:text-sm px-2 py-0.5">
-                      {tech}
-                    </Badge>
-                  ))}
                 </div>
               </div>
             </CardContent>
