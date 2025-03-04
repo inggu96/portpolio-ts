@@ -4,7 +4,7 @@ export const mogotsuDetail: ProjectDetail = {
   title: "MOGOTS (モゴッツ) - K-POP 아이돌 굿즈 크로스보더 커머스 플랫폼",
   period: "2024.05 ~ 2025.02",
   overview:
-    "일본 K-POP 팬들을 위한 공식 굿즈 직구 플랫폼으로, 한일 간 물류 시스템과 결제 시스템을 통합하여 원스톱 쇼핑 경험을 제공합니다. LINE 소셜 로그인, KG이니시스 일본 결제, EXMATE 배송 추적 등 양국의 주요 서비스들을 성공적으로 연동했습니다.",
+    "일본 K-POP 팬들을 위한 패션/굿즈 직구 플랫폼으로 자사몰 서버구축 및 운영, 한일 간 물류 시스템과 결제 시스템을 통합하여 원스톱 쇼핑 경험을 제공합니다. LINE 소셜 로그인, KG이니시스 일본 결제, EXMATE 배송 추적 등 양국의 주요 서비스들을 성공적으로 연동했습니다.",
   projectScale: {
     duration: "10개월",
     commits: "850+ commits",
@@ -62,7 +62,7 @@ export const mogotsuDetail: ProjectDetail = {
       details: [
         "이미지 최적화 및 CDN 활용",
         "Sharp 라이브러리 활용 이미지 처리",
-        "Google Ads 연동을 위한 상품 데이터 CSV 추출 구현",
+        "Google Ads 연동을 위한 상품 데이터 CSV 추출 구현(7만여개 상품 및 고객데이터)",
         "타겟 고객 세그먼트 데이터 기반 맞춤형 광고 구현",
         "상품 메타데이터를 활용한 사이트맵 자동 생성",
         "SEO 최적화 및 검색엔진 노출 개선",

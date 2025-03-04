@@ -43,7 +43,7 @@ const CareerSection = () => {
                 navigate("/career");
               }}
             >
-              자세히 보기
+              근무이력 조회
             </Button>
           </div>
         </CardContent>

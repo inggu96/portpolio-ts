@@ -51,7 +51,11 @@ const SideProjectSection = () => {
               </li>
               <li className="flex gap-2 items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full" />
-                구글광고 세팅 및 애널리틱스를 이용한 유저 데이터 분석
+                구글광고 상품등록을 위한 sql쿼리세팅(7만여개 상품 및 고객데이터)
+              </li>
+              <li className="flex gap-2 items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                애널리틱스를 이용한 유저 데이터 및 사용량 분석 및 대응
               </li>
             </ul>
             <div className="flex flex-wrap gap-2">
@@ -75,7 +79,7 @@ const SideProjectSection = () => {
                   navigate("/projects/mogotsu");
                 }}
               >
-                자세히 보기
+                개발일지 조회
               </Button>
             </div>
           </div>
@@ -88,13 +92,14 @@ const SideProjectSection = () => {
             <div className="mb-6">
               <h4 className="mb-3 text-xl font-medium">레인조 라이딩스쿨</h4>
               <p className="text-gray-700">
-                지인의 추천으로 맡게 된 외주 프로젝트로, 라이딩스쿨 웹 리뉴얼 및 디자인/개발
+                지인의 추천으로 맡게 된 외주 프로젝트로, 라이딩스쿨 웹 리뉴얼(메인과 일부 api 한정) 및 디자인/개발
               </p>
               <Separator className="my-4" />
               <p className="mb-4 text-gray-700">
-                기존에 라라벨로 빌드된 웹사이드 리뉴얼 업무를 맡았으며 프로젝트의 효율적인 진행을 위해 퇴근 후에 시간을
-                할애하여 작업을 진행했으며, 이 과정에서 담당자와 지속적이고 원활한 소통을 유지했습니다. 이러한 노력
-                덕분에 프로젝트를 빠르고 효과적으로 진행할 수 있었습니다
+                기존에 라라벨로 빌드된 웹사이트 리뉴얼 업무를 맡았으며 프로젝트의 효율적인 진행을 위해 퇴근 후에 시간을
+                할애하여 작업을 진행했습니다. 이 과정에서 빠른 피드백을 제공하고, 시각적 자료를 활용한 효과적인
+                커뮤니케이션 및 문서화를 통해 담당자와의 원활한 소통을 유지하여 프로젝트를 빠르고 효과적으로 진행할 수
+                있었습니다.
               </p>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex gap-2 items-center">
