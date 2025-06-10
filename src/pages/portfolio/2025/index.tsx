@@ -9,7 +9,7 @@ const Portfolio2025 = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <Analytics />
-      <main className="container px-4 py-16 mx-auto max-w-4xl">
+      <main className="container max-w-4xl px-4 py-16 mx-auto">
         {/* Profile Section */}
         <ProfileSection />
 
