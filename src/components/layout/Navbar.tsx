@@ -12,12 +12,12 @@ interface NavItem {
 
 // src/constants/navigation.ts
 export const navItems: NavItem[] = [
-  {
-    id: "portfolio-2025",
-    label: "2025",
-    path: "/portfolio/2025",
-    year: 2025,
-  },
+  // {
+  //   id: "portfolio-2025",
+  //   label: "2025",
+  //   path: "/portfolio/2025",
+  //   year: 2025,
+  // },
   {
     id: "portfolio-2024",
     label: "2024",
@@ -45,9 +45,9 @@ export const Navigation = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-sm">
+    <nav className="fixed top-0 z-50 w-full bg-white shadow-sm">
       <div className="container px-4 py-4 mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-bold">
             Portfolio
           </Link>
