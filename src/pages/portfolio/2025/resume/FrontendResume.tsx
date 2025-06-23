@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/common/ui/card";
 import { Badge } from "@/components/common/ui/badge";
-import { Separator } from "@/components/common/ui/separator";
 import { IoLogoGithub } from "react-icons/io";
 import { SiVelog } from "react-icons/si";
 import CareerSection from "../sections/Career";
